@@ -107,7 +107,7 @@ width: 10%;
 navi-norm {
   width: 100%;
   min-height: 50px;
-  background-color: transparent;
+  background-color: white;
   position: sticky;
   top: 0;
   padding: 0;
