@@ -122,7 +122,7 @@ navi-dark {
   min-height: 50px;
   background-color: #2b2b2b;
   position: sticky;
-  color: white;
+  color: white !important;
   top: 0;
   padding: 0;
   display: flex;
