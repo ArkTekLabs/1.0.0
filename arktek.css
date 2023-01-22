@@ -1,0 +1,671 @@
+/*Arktek Framework 1.0.0*/
+/*All Beta launch */
+/*Impliment into your daily builds to get simple coding with easy modern tech look and design*/
+/*Arktek Building Blocks to GO Inside of the Containers*/
+
+
+
+/*Google MaterialUI Icons*/
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet");  
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+/*Desktop & Tablet classes to apply to any element so it will adjust to size*/
+  
+.arktek-1 {
+  width: 100%;
+}
+
+.arktek-.9 {
+  width: 90%;
+}
+
+.arktek-.8 {
+  width: 80%;
+}
+
+.arktek-.7 {
+  width: 70%;
+}
+
+.arktek-.6 {
+  width: 60%;
+}
+
+.arktek-.6 {
+  width: 60%;
+}
+
+.arktek-.5 {
+  width: 50%;
+}
+
+.arktek-.4 {
+  width: 40%;
+}
+
+.arktek-.3 {
+  width: 30%;
+}
+
+.arktek-.2 {
+  width: 20%;
+}
+
+.arktek-.1 {
+  width: 10%;
+}
+
+/*Arktek Building block containers */
+
+arktek-1 {
+width: 100%;
+}
+
+arktek-.9 {
+width: 90%;
+}
+
+arktek-.8 {
+width: 80%;
+}
+
+arktek-.7 {
+width: 70%;
+}
+
+arktek-.6 {
+width: 60%;
+}
+
+arktek-.6 {
+width: 60%;
+}
+
+arktek-.5 {
+width: 50%;
+}
+
+arktek-.4 {
+width: 40%;
+}
+
+arktek-.3 {
+width: 30%;
+}
+
+arktek-.2 {
+width: 20%;
+}
+
+arktek-.1 {
+width: 10%;
+}
+
+/*Navbar's are all sticky to the top of page*/
+
+navi-norm {
+  width: 100%;
+  min-height: 50px;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid black;
+}
+
+navi-dark {
+  width: 100%;
+  min-height: 50px;
+  background-color: #2b2b2b;
+  position: sticky;
+  top: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid black;
+}
+
+/*Footers can be sticky if */
+
+footy {
+  width: 100%;
+  min-height: 50px;
+  background-color: #2b2b2b;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid black;
+}
+
+footy-s {
+  width: 100%;
+  min-height: 50px;
+  background-color: #2b2b2b;
+  position: sticky;
+  bottom: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid black;
+}
+
+
+/*HERO for big banners or overside text etc 
+Example of sample to deploy
+
+<archero>
+  <div> Content inside archero </div>
+</archero>*/
+
+archero {
+  min-height: 500px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*PopUp MODAL - ArkPops*/
+/*Example of how to use in html
+
+Needs a button or a link 
+<button class="arkpop-open" data-arkpop="arkpop1">Open Arkpop 1</button>
+
+to place inside
+<arkpop class="arkpop1">
+  <div class="arkpop-content">
+    All of the content in here will stay in here and stretch when needed.
+    <button class="arkpop-close">Close</button>
+  </div>
+</arkpop>*/
+
+arkpop {
+  display: none; /* hide the pop up by default */
+}
+
+.arkpop-content {
+  width: 80%; /* set the width to 80% of the screen */
+  margin: 0 auto; /* center the pop up horizontally */
+  position: absolute; /* position the pop up in the center and middle of the screen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 50px;
+  z-index: 99;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+/* create an overlay with a .3 opacity */
+.arkpop::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 98;
+}
+
+/* add a fade in animation to the pop up */
+.arkpop.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/*Arktek Buttons & Styles*/
+
+
+.arkbtn{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #0066CC;
+padding: 10px 30px;
+border: solid #0066cc00 2px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+
+}
+
+.arkbtn:hover{
+transition : 1000ms;
+padding: 10px 37px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 2px #0066cc;
+
+}
+
+
+.arkalert{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #d62828;
+padding: 10px 30px;
+border: solid #0066cc00 2px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+
+}
+
+.arkalert:hover{
+transition : 1000ms;
+padding: 10px 37px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #d62828;
+border: solid 2px #d62828;
+
+}
+
+.arctcaut{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #e9c46a;
+padding: 10px 30px;
+border: solid #0066cc00 2px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+
+}
+
+.arkcaut:hover{
+transition : 1000ms;
+padding: 10px 37px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #e9c46a;
+border: solid 2px #e9c46a;
+
+}
+
+
+.arkgo{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #2a9d8f;
+padding: 10px 30px;
+border: solid #0066cc00 2px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+
+}
+
+.arkgo:hover{
+transition : 1000ms;
+padding: 10px 37px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #2a9d8f;
+border: solid 2px #2a9d8f;
+
+}
+
+
+.arkout{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #636363;
+padding: 10px 30px;
+border: solid #0066cc00 2px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+
+}
+
+.arkout:hover{
+transition : 1000ms;
+padding: 10px 37px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #808080;
+border: solid 2px #6b6b6b;
+
+}
+
+
+
+
+/*Table*/
+/* example 
+<arktable>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 3, Cell 1</td>
+      <td>Row 3, Cell 2</td>
+      <td>Row 3, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 4, Cell 1</td>
+      <td>Row 4, Cell 2</td>
+      <td>Row 4, Cell 3</td>
+    </tr>
+  </tbody>
+</arktable>*/
+
+arktable {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #F8F8F8;
+  border-style: solid;
+  border-radius: 50px;
+  color: #000000;
+}
+
+arktable td, arktable th {
+  border-width: 2px;
+  border-color: #F8F8F8;
+  border-style: solid;
+  padding: 5px;
+}
+
+arktable thead {
+  background-color: #F8F8F8;
+}
+
+
+
+
+
+
+/* Mobile breakpoints */
+@media (max-width: 480px) {
+
+ 
+.arktek-1 {
+  width: 100%;
+}
+
+.arktek-.9 {
+  width: 90%;
+}
+
+.arktek-.8 {
+  width: 80%;
+}
+
+.arktek-.7 {
+  width: 70%;
+}
+
+.arktek-.6 {
+  width: 60%;
+}
+
+.arktek-.6 {
+  width: 60%;
+}
+
+.arktek-.5 {
+  width: 50%;
+}
+
+.arktek-.4 {
+  width: 40%;
+}
+
+.arktek-.3 {
+  width: 30%;
+}
+
+.arktek-.2 {
+  width: 20%;
+}
+
+.arktek-.1 {
+  width: 10%;
+}
+
+/*Arktek Building block containers */
+
+arktek-1 {
+width: 100%;
+}
+
+arktek-.9 {
+width: 90%;
+}
+
+arktek-.8 {
+width: 80%;
+}
+
+arktek-.7 {
+width: 70%;
+}
+
+arktek-.6 {
+width: 60%;
+}
+
+arktek-.6 {
+width: 60%;
+}
+
+arktek-.5 {
+width: 50%;
+}
+
+arktek-.4 {
+width: 40%;
+}
+
+arktek-.3 {
+width: 30%;
+}
+
+arktek-.2 {
+width: 20%;
+}
+
+arktek-.1 {
+width: 10%;
+}
+
+/*Navbar's are all sticky to the top of page*/
+
+navi-norm {
+  width: 100%;
+  min-height: 50px;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid black;
+}
+
+navi-dark {
+  width: 100%;
+  min-height: 50px;
+  background-color: #2b2b2b;
+  position: sticky;
+  top: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid black;
+}
+
+/*Footers can be sticky if */
+
+footy {
+  width: 100%;
+  min-height: 50px;
+  background-color: #2b2b2b;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid black;
+}
+
+footy-s {
+  width: 100%;
+  min-height: 50px;
+  background-color: #2b2b2b;
+  position: sticky;
+  bottom: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid black;
+}
+
+
+/*HERO for big banners or overside text etc 
+Example of sample to deploy
+
+<archero>
+  <div> Content inside archero </div>
+</archero>*/
+
+archero {
+  min-height: 500px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*PopUp MODAL - ArkPops*/
+/*Example of how to use in html
+
+Needs a button or a link 
+<button class="arkpop-open" data-arkpop="arkpop1">Open Arkpop 1</button>
+
+to place inside
+<arkpop class="arkpop1">
+  <div class="arkpop-content">
+    All of the content in here will stay in here and stretch when needed.
+    <button class="arkpop-close">Close</button>
+  </div>
+</arkpop>*/
+
+arkpop {
+  display: none; /* hide the pop up by default */
+}
+
+.arkpop-content {
+  width: 80%; /* set the width to 80% of the screen */
+  margin: 0 auto; /* center the pop up horizontally */
+  position: absolute; /* position the pop up in the center and middle of the screen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 50px;
+  z-index: 99;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+/* create an overlay with a .3 opacity */
+.arkpop::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 98;
+}
+
+/* add a fade in animation to the pop up */
+.arkpop.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+}
