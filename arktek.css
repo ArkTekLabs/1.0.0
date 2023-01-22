@@ -107,7 +107,7 @@ width: 10%;
 navi-norm {
   width: 100%;
   min-height: 50px;
-  background-color: #2b2b2b;
+  background-color: white;
   position: sticky;
   top: 0;
   padding: 0;
@@ -122,6 +122,7 @@ navi-dark {
   min-height: 50px;
   background-color: #2b2b2b;
   position: sticky;
+  color: white;
   top: 0;
   padding: 0;
   display: flex;
